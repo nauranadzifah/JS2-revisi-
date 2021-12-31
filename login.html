@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasLogin</title>
+</head>
+<body>
+    
+    <form action="halamanlogin.html">
+    <label for="username">Username</label>
+    <input type="username" type="text">
+
+    <label for="password">Password</label>
+    <input type="password" type="text">
+
+    <br><br>
+
+    <button onclick="login()">login</button>
+    </form>
+
+    <script>
+
+        function login() {
+        let username = document.getElementById('username');
+        let password = document.getElementById('password');
+        }
+
+
+        if(username.value === 'ahmad2017' && password.value === 'integrity') {
+            console.log('sukses bro')
+        }
+        else {
+            document.write('gagal login sayy')
+        }
+
+
+    </script>
+
+
+</body>
+</html>

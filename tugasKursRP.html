@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasKursRp</title>
+    <style>
+        .name{
+            width: 30%;
+        }
+
+        #hasilKonvers {
+            border: 1px solid black;
+            width: 160px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="name">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table style="border: 2px solid black;">
+        <thead>
+            <tr>
+                <th>Masukkan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td><input type="number" id="inputNominal"</td>
+                    <td><select id="nilaiKurs" onchange="perhitungan()">
+                        <option value="USD">Dollar US</option>
+                        <option value="SGD">Dollar Singapore</option>
+                        <option value="MYR">Ringgit Malaysia</option>
+                        <option value="JPY">Yen Jepang</option>
+                        <option value="EUR">Euro</option>
+                        <option value="SAR">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div id="hasilKonvers"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    
+    <script>
+        const inputNominal = document.getElementById("inputNominal");
+        const nilaiKurs = document.getElementById("nilaiKurs");
+        const tombol = document.getElementById("hasil");
+
+        function perhitungan() {
+            if (nilaiKurs.value == "USD") {
+                document.getElementById("hasilKonvers").innerHTML = inputNominal.value * 14370;
+            }
+
+            else if (nilaiKurs.value == "SGD") {
+                hasilKonvers.innerHTML = inputNominal.value * 10533.65;
+            }
+
+            else if (nilaiKurs.value == "MYR") {
+                hasilKonvers.innerHTML = inputNominal.value * 3409.25;
+            }
+
+            else if (nilaiKurs.value == "JPY") {
+                hasilKonvers.innerHTML = inputNominal.value * 126.73;
+            }
+
+            else if (nilaiKurs.value == "EUR") {
+                hasilKonvers.innerHTML = inputNominal.value * 16253.91;
+            }
+
+            else{
+                hasilKonvers.innerHTML = inputNominal.value * 3830;
+            }
+        }
+    </script>
+
+</body>
+</html>

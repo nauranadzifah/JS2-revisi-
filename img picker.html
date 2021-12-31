@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Pilih gambar</h3>
+        <table style="border: solid 1px">
+          <tr>
+            <td>
+              <label for="random">Pilihlah Salah Satu Transportasi Ini</label><br />
+              <select id="random">
+                <option value="a">Quotes</option>
+                <option value="b">Ini foto random</option>
+                <option value="c">nirmana</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <button onclick="cetakGambar()">Cetak</button>
+      <br />
+      <div style="width: 150px; height: 150px; border-style: solid 1px">
+        <img src="" id="gambar" />
+      </div>
+      <script>
+        function cetakGambar() {
+          let random = document.getElementById("random");
+          let gambar = document.getElementById("gambar");
+  
+          if (random.value === "a") {
+            gambar.src = "itss.jpeg";
+            window.alert("Ini quotes");
+          }
+  
+          if (random.value === "b") {
+            gambar.src = "keep.jpeg";
+            window.alert("Ini foto random");
+          }
+  
+          if (random.value === "c") {
+            gambar.src = "nirmana.jpeg";
+            window.alert("Ini foto nirmana");
+          }
+        }
+      </script>
+</body>
+</html>
