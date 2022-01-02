@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="From.css" />
+    <script src="From.Js"></script>
+  </head>
+  <body>
+    <div class="countainer">
+      <div class="Header">
+        <h1>Pemesanan Tiket</h1>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username" class="label">Username</label>
+          <input type="text" placeholder="nanaura" id="username" style="text-align: center" />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-control">
+          <label for="email" class="label">Email</label>
+          <input type="email" placeholder="nuaranadzifah@gmail.com" id="email" style="text-align: center" />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-control">
+          <label for="jamkeberangkatan" class="label">Jam Keberangkatan</label>
+          <input type="jamkeberangkatan" placeholder="00.00 - 23.59" id="jamkeberangkatan" style="text-align: center" />
+          <span class="error-message"></span>
+        </div>
+        <div class="form-control">
+          <label for="jumlahtiket" class="label">Jumlah Tiket</label>
+          <select name="quantity" id="quantity" style="width: 50%; text-align: center">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="1">6</option>
+            <option value="2">7</option>
+            <option value="3">8</option>
+            <option value="4">9</option>
+            <option value="5">10</option>
+          </select>
+          <span class="error-message"></span>
+        </div>
+        <button class="button" type="submit" herf="Login/dashboard.html">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
